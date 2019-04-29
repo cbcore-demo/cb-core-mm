@@ -7,7 +7,7 @@ USER root
 ARG user=jenkins
 
 #skip setup wizard and disable CLI
-ENV JVM_OPTS -Djenkins.CLI.disabled=true -server
+ENV JVM_OPTS -Djenkins.install.runSetupWizard=false -Djenkins.CLI.disabled=true -server
 ENV TZ="/usr/share/zoneinfo/America/New_York"
 
 RUN mkdir -p /usr/share/jenkins/ref/init.groovy.d
