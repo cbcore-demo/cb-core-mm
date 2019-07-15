@@ -1,6 +1,6 @@
 FROM cloudbees/cloudbees-core-mm:2.164.1.2
 
-LABEL maintainer "kmadel@cloudbees.com"
+LABEL maintainer "phil.cherry@cloudbees.com"
 
 USER root
 
