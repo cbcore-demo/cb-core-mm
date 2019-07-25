@@ -9,6 +9,7 @@ cloudbees-workflow-ui:2.1
 notification-api:1.1
 operations-center-notification:1.0
 pipeline-event-step:1.2
+pipeline-model-definition
 pipeline-rest-api:2.10
 pipeline-stage-step:2.2
 pipeline-stage-view:2.10
