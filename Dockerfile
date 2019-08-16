@@ -1,4 +1,4 @@
-FROM cloudbees/cloudbees-core-mm:2.164.1.2
+FROM cloudbees/cloudbees-core-mm:2.176.1.4
 
 LABEL maintainer "phil.cherry@cloudbees.com"
 
@@ -38,3 +38,5 @@ COPY plugins.txt plugins.txt
 COPY jenkins-support /usr/local/bin/jenkins-support
 COPY install-plugins.sh /usr/local/bin/install-plugins.sh
 RUN /usr/local/bin/install-plugins.sh $(cat plugins.txt)
+
+USER jenkins
