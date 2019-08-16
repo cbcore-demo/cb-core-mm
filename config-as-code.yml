@@ -11,24 +11,3 @@ jenkins:
   markupFormatter:
     rawHtml:
       disableSyntaxHighlighting: true
-  numExecutors: 0
-unclassified:
-  artifactManager:
-    artifactManagerFactories:
-      - jclouds:
-          provider: s3
-  globallibraries:
-    libraries:
-    - defaultVersion: "master"
-      name: "kypseli"
-      retriever:
-        modernSCM:
-          scm:
-            github:
-              credentialsId: "kypseli-github-token"
-              repoOwner: "kypseli"
-              repository: "pipeline-library"
-aws:
-  s3:
-    container: "kypseli"
-    prefix: "cb-core/artifacts/"
