@@ -21,8 +21,8 @@ COPY ./quickstart/* /usr/share/jenkins/ref/quickstart.groovy.d/
 ENV JENKINS_UC http://jenkins-updates.cloudbees.com
 
 #config-as-code plugin configuration
-COPY config-as-code.yml /usr/share/jenkins/config-as-code.yml
-ENV CASC_JENKINS_CONFIG /usr/share/jenkins/config-as-code.yml
+#COPY config-as-code.yml /usr/share/jenkins/config-as-code.yml
+#ENV CASC_JENKINS_CONFIG /usr/share/jenkins/config-as-code.yml
 
 #install suggested and additional plugins
 ENV JENKINS_UC http://jenkins-updates.cloudbees.com
