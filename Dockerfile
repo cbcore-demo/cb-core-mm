@@ -35,6 +35,7 @@ USER ${user}
 
 COPY ./jenkins_ref /usr/share/jenkins/ref
 COPY plugins.txt plugins.txt
+COPY jenkins-support /usr/local/bin/jenkins-support
 COPY install-plugins.sh /usr/local/bin/install-plugins.sh
 RUN /usr/local/bin/install-plugins.sh $(cat plugins.txt)
 
