@@ -11,3 +11,4 @@ jenkins:
   markupFormatter:
     rawHtml:
       disableSyntaxHighlighting: true
+  quietPeriod: 0
