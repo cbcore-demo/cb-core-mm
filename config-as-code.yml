@@ -12,3 +12,6 @@ jenkins:
     rawHtml:
       disableSyntaxHighlighting: true
   quietPeriod: 0
+security:
+  globalJobDslSecurityConfiguration:
+    useScriptSecurity: false
