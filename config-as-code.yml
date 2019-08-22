@@ -11,6 +11,7 @@ jenkins:
   markupFormatter:
     rawHtml:
       disableSyntaxHighlighting: true
+  numExecutors: 1
   quietPeriod: 0
 security:
   globalJobDslSecurityConfiguration:
