@@ -1,4 +1,4 @@
-FROM cloudbees/cloudbees-core-mm:2.190.2.2
+FROM cloudbees/cloudbees-core-mm:2.235.2.3
 
 LABEL maintainer "phil.cherry@cloudbees.com"
 
@@ -19,6 +19,9 @@ ENV TRY_UPGRADE_IF_NO_MARKER=true
 
 RUN mkdir -p /usr/share/jenkins/ref/plugins
 RUN chown -R ${user} /usr/share/jenkins/ref
+
+# Install unzip for jenkins-support
+RUN yum -y install unzip
 
 USER ${user}
 
